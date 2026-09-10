@@ -12,12 +12,12 @@ int main()
         pr = (pr*10)+div;
         p = p/10;
     }
-    if(p == org)
+    if(pr == org)
     {
-        printf("%d it is a palindrome\n",p);
+        printf("%d it is a palindrome\n",org);
     }else
     {
-        printf("%d is not a palindrome\n",p);
+        printf("%d is not a palindrome\n",org);
     }
     printf("The reverse number is %d\n",pr);
     return 0;
