@@ -1,7 +1,7 @@
 #include <stdio.h>
 int fibo(int n,int limits)
 {
-   static int a = 0, b = 1 , c = 1;
+   static int a = 0, b = 1 , c = 1, ans = 0;
    int mods = n%2;
     printf(" %d ",c);
    if(n>limits)
@@ -10,11 +10,13 @@ int fibo(int n,int limits)
    {
       b=c,c=a+c;
       fibo( n+1, limits);
+       ans = ans + c;
    }
    else
    {
       a=c,c=b+c;
       fibo( n+1 , limits);
+      ans = ans + c;
    }
    
 }

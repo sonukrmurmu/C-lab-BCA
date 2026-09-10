@@ -13,12 +13,18 @@ int main()
     }
     else if(sqr < 0)
     {
-        printf("The equation has imaginary roots");
-    }else{
+        printf("It is imaginary number");
+    }else
+    {
     float sqrttt = sqrtf(sqr);
     float ans1 = (-b+sqrttt)/(2*a);
     float ans2 = (-b-sqrttt)/(2*a);
-    printf("The answer of given equation is %.4f and %.4f",ans1,ans2);
+    printf("The answer of given equation is %.4f and %.4f\n",ans1,ans2);
+    printf("It is a real and distinct value");
+    }
+    if(sqr == 0)
+    {
+        printf("It is real and equal solution");
     }
     return 0;
 }
