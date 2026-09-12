@@ -23,8 +23,7 @@ int fibo(int n,int limits)
       fibo( n+1 , limits);
    
    }
-
-   
+   return ans;  
 }
 
 int main()
